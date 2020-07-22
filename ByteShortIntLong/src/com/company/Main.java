@@ -41,5 +41,14 @@ public class Main {
         System.out.println("Long Minimum Value = " + myMaxLongValue);
         long bigLongLiteralValue = 2_147_483_648_234L;
         System.out.println(bigLongLiteralValue);
+
+        // ----------------Challenge 1---------------- //
+
+        byte myByteVar = 10;
+        short myShortVar = 20;
+        int myIntVar = 50;
+        long myLongVar = 50000 + (10 * (myByteVar + myShortVar + myIntVar));
+
+        System.out.println(myLongVar);
     }
 }
