@@ -34,12 +34,25 @@ public class Main {
         System.out.println(result);
 
         result -= 2;
-        System.out.println("10 - 2 = " + result);
+        System.out.println(result);
 
         boolean isAlien = false;
         if(isAlien == false) {
             System.out.println("It is not an alien!");
             System.out.println("And I am scared of aliens!");
+        }
+
+        int topScore = 100;
+        if (topScore >= 100) {
+            System.out.println("You got the high score!");
+
+            // && = AND;
+            // || = OR;
+            // '=' declares, '==' compares (Like JavaScript);
+
+            boolean isCar = false;
+
+            boolean wasCar = isCar ? true : false;
         }
     }
 }
