@@ -15,7 +15,23 @@ public class Main {
             System.out.println("Float maximum value = " + myMaxDoubleValue);
 
             int myIntValue = 5;
-            float myFloatValue = 5.25f;
-            double myDoubleValue = 5.25d;
-        }
+            float myFloatValue = 5f;
+            double myDoubleValue = 5d;
+
+            System.out.println("MyIntValue = " + myIntValue);
+            System.out.println("MyFloatValue = " + myFloatValue);
+            System.out.println("MyDoubleValue = " + myDoubleValue);
+
+            //----- Challenge ----- //
+
+             double myPounds = 200;
+             double myKilogram = myPounds * 0.45359237;
+
+             System.out.println(myKilogram);
+
+             double pi = 3.1415927d;
+             double anotherNumber = 3_000_000.4_567_890d;
+             System.out.println(pi);
+             System.out.println(anotherNumber);
+    }
     }
