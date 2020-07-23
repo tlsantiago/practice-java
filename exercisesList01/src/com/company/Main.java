@@ -5,7 +5,27 @@ public class Main {
     public static void main(String[] args) {
         toMilesPerHour(10);
         printConversion(20);
+        printMegaBytesAndKiloBytes(5222);
     }
+
+    //--------------- MegaBytes Converter -----------------//
+    public static void printMegaBytesAndKiloBytes(int kiloBytes) {
+        int megaBytes = 0;
+        int remainingKb = 0;
+
+        if(kiloBytes < 0) {
+            System.out.println("Invalid Value!");
+        } else {
+            megaBytes = kiloBytes / 1024;
+            remainingKb = kiloBytes % 1024;
+            System.out.println(kiloBytes + "KB = " + megaBytes + "MB and " +
+                    remainingKb + "KB");
+        }
+    }
+
+
+
+    //--------------- Myles Converter -----------------//
 
     public static double toMilesPerHour (double kilometersPerHour) {
         double miles = 0;
