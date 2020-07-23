@@ -6,9 +6,30 @@ public class Main {
         toMilesPerHour(10);
         printConversion(20);
         printMegaBytesAndKiloBytes(5222);
+        shouldWakeUp(true, -1);
+    }
+    //--------------- Barking dog -----------------//
+
+    public static boolean shouldWakeUp (boolean barking, int hourOfDay) {
+
+        if(barking == false || hourOfDay < 0) {
+            System.out.println("False");
+            return false;
+        } else {
+            if(hourOfDay < 8 || hourOfDay > 22) {
+                System.out.println("True");
+                return true;
+            } else {
+                System.out.println("False");
+                return false;
+            }
+        }
     }
 
+
     //--------------- MegaBytes Converter -----------------//
+
+
     public static void printMegaBytesAndKiloBytes(int kiloBytes) {
         int megaBytes = 0;
         int remainingKb = 0;
