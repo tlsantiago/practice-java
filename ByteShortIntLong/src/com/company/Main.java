@@ -49,6 +49,7 @@ public class Main {
         int myIntVar = 50;
         long myLongVar = 50000 + (10 * (myByteVar + myShortVar + myIntVar));
 
-        System.out.println(myLongVar);
+        System.out.println(myLongVar);euaeh
+                
     }
 }
